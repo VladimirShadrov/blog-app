@@ -52,7 +52,7 @@ body {
   color: #979797;
 }
 
-.field-post {
+.field.field-post {
   height: 250px;
   resize: none;
 }
@@ -123,6 +123,10 @@ body {
 .post__title {
   font-size: 32px;
   font-weight: 700;
+}
+
+.post__text {
+  white-space: pre-wrap;
 }
 
 @media (max-width: 768px) {
