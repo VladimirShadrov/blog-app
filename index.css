@@ -7,7 +7,187 @@
   font-family: 'Inter', sans-serif;
 }
 
-p {
-  font-size: 30px;
-  font-weight: 400;
+body {
+  padding: 20px 16px;
+  min-height: 100vh;
+}
+
+.blog {
+  max-width: 1030px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.blog__options,
+.blog__posts {
+  width: 50%;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.options-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+.field {
+  border: 1px solid black;
+  background: white;
+  outline: none;
+  margin-bottom: 30px;
+  padding: 11px 20px;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.field::placeholder {
+  color: #979797;
+}
+
+.field-post {
+  height: 250px;
+  resize: none;
+}
+
+.public-btn {
+  color: white;
+  padding: 6px 12px;
+  background: #0094ff;
+  border: none;
+  outline: none;
+  height: 60px;
+  font-size: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.public-btn:hover {
+  background: blue;
+}
+
+.public-btn.public-btn__disabled {
+  background: lightblue;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.error:last-child {
+  margin-bottom: 0;
+}
+
+.post-list {
+  max-height: 800px;
+  overflow-y: auto;
+  font-size: 25px;
+  padding-right: 8px;
+}
+
+.not-posts {
+  font-size: 32px;
+  color: #979797;
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post__date,
+.post__title {
+  margin-bottom: 15px;
+}
+
+.post__date {
+  color: #0094ff;
+}
+
+.post__title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px 12px;
+  }
+  .blog {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .blog__options,
+  .blog__posts {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+
+  .field {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .field-title {
+    margin-bottom: 16px;
+  }
+
+  .field-post {
+    height: 180px;
+    margin-bottom: 16px;
+  }
+
+  .options-wrapper {
+    margin-bottom: 12px;
+  }
+
+  .error {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .public-btn {
+    font-size: 18px;
+    height: 40px;
+  }
+
+  .not-posts,
+  .post__date,
+  .post__text {
+    font-size: 16px;
+  }
+
+  .post__title {
+    font-size: 24px;
+  }
+
+  .post__date,
+  .post__title {
+    margin-bottom: 8px;
+  }
+
+  .post {
+    margin-bottom: 26px;
+  }
 }

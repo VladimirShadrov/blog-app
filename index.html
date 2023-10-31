@@ -7,6 +7,46 @@
     <title>Blog App</title>
   </head>
   <body>
+    <div class="blog">
+      <div class="blog__options">
+        <h3 class="title">Новый пост</h3>
+
+        <div class="options-wrapper">
+          <input class="field field-title js-field-title" type="text" placeholder="Заголовок" />
+          <textarea class="field field-post js-field-post" placeholder="Напиши пост"></textarea>
+          <button class="public-btn public-btn__disabled js-public-btn">Опубликовать</button>
+        </div>
+
+        <div class="errors">
+          <p class="error">Заголовок больше 100 символов</p>
+          <p class="error">Пост больше 200 символов</p>
+        </div>
+      </div>
+
+      <div class="blog__posts">
+        <h3 class="title">Лента</h3>
+        <div class="post-list">
+          <p class="not-posts">Тут пока пусто...</p>
+          <div class="post">
+            <div class="post__date">20.05.2023 11:00</div>
+            <h3 class="post__title">Привет Мир</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet auctor iaculis. Aliquam viverra ultrices dui. Aenean dolor dolor,
+              congue eget congue non, varius non urna.
+            </p>
+          </div>
+          <div class="post">
+            <div class="post__date">20.05.2023 11:00</div>
+            <h3 class="post__title">Привет Мир</h3>
+            <p class="post__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet auctor iaculis. Aliquam viverra ultrices dui. Aenean dolor dolor,
+              congue eget congue non, varius non urna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
