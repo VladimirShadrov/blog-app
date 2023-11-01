@@ -48,6 +48,10 @@ body {
   line-height: normal;
 }
 
+.field.invalid {
+  color: red;
+}
+
 .field::placeholder {
   color: #979797;
 }
